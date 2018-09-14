@@ -14,7 +14,9 @@ $(function(){
 
         while(randomCharacter.length < 4){
             var randomN = Math.floor(Math.random() * 13);
-            randomCharacter.push(character[randomN]);            
+            if(randomCharacter.indexOf(character[randomN]) < 0){
+                randomCharacter.push(character[randomN]); 
+            }
         }
 
         for(var i =0; i < randomCharacter.length; i++){
