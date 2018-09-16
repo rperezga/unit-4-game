@@ -1,38 +1,58 @@
-$(function(){
+$(function () {
 
-    
+
     var randomCharacter = [];
     var yourName = '';
+    var characters = ['apu', 'bart', 'comicbookguy', 'homer', 'itchy', 'krusty', 'lisa', 'maggie', 'marge', 'mr-burns', 'ned-flanders', 'ralph-wiggum', 'smithers'];
 
     var character = {
-        characters = ['apu', 'bart', 'comicbookguy', 'homer', 'itchy', 'krusty', 'lisa', 'maggie', 'marge', 'mr-burns', 'ned-flanders', 'ralph-wiggum', 'smithers'],
-        
+
         name: "",
         healthPoints: 0,
         attackPower: 0,
         counterAttackPower: 0,
 
-        get start(){
-            while(randomCharacter.length < 4){
+        get start() {
+
+            while (randomCharacter.length < 4) {
                 var randomC = Math.floor(Math.random() * 13);
                 character.name = characters[randomC];
+
+                console.log(randomCharacter.findIndex(x => x.name === character.name));
+
+
+
                 character.healthPoints = Math.floor(Math.random() * 100) + 100;
-                
+                character.attackPower = Math.floor(Math.random() * 100) + 100;
+
+                randomCharacter.push(character);
+
+                console.log(randomCharacter);
+
 
 
 
             }
+            return this;
+
+
+            /*
             
 
 
-            if(randomCharacter.indexOf(character[randomC]) < 0){
-                randomCharacter.push(character[randomN]); 
+            if (randomCharacter.indexOf(character[randomC]) < 0) {
+                randomCharacter.push(character[randomN]);
             }
 
 
-            return (this.character);
+            return this;
+
+            */
         }
     }
+
+
+    character.start;
 
 
 });
