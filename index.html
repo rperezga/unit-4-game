@@ -36,6 +36,7 @@
     <div id="myGame">
         <header>
             <img src="assets/images/logo.png" alt="" id="gameImg">
+            <button id="finish" class="btn btn-danger" style="margin-left: 50px;">Exit</button>
         </header>
 
         <div class="jumbotron shadow-lg">
@@ -47,108 +48,30 @@
             <div class="row" id="characters-available">
             </div>
 
+            <hr>
+
             <div class="row">
-                <div class="col-lg-4 text-center" id="defender">
+                <div class="col-lg-4 text-center">
                     <h2>Defender</h2>
+                    <div id="defender"></div>
                 </div>
                 <div class="col-lg-4 text-center" id="values">
                     <div class="attackZone" hidden  style="border: 1px solid black">
                         <h2 style="margin-top: 20px;">Fight Section</h2>
                         <button id="attack" class="btn btn-primary" style="margin-bottom: 20px;">ATTACK</button>
+                        <h4 id="game-message"></h4>
+                        <button id="restart" class="btn btn-danger" style="margin-bottom: 20px;">RESTART</button>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center" id="enemy">
+                <div class="col-lg-4 text-center" >
                     <h2>Enemy</h2>
+                    <div id="enemy"></div>
                 </div>
             </div>
 
-        </div>
-
-
-
-
-
-
-        <button id="finish" class="btn btn-success">Exit Game</button>
-
-
-
-
-    </div>
-
-
-
-
-    <!--             
-
-    <div id="myWelcome">
-        <img src="assets/images/logo.png" alt="" id="welcomeImg">
-        <div class="forName">
-            <label>What is your name?</label>
-            <div>
-                <input type="text" id="yourName" placeholder="John Smith">
-            </div>
-            <button id="start" class="btn btn-success" disabled>Star Game</button>
         </div>
 
     </div>
-
-    <div id="myGame">
-        <header>
-            <img src="assets/images/logo.png" alt="" id="gameImg">
-        </header>
-
-        <div class="jumbotron shadow-lg">
-
-            <div class="row">
-                <div class="col-lg-5" id="game">
-                    <div id="status_image"></div>
-                </div>
-
-                <div class="col-lg-7">
-                    <h1 class="display-4" id="name"></h1>
-
-                    <p class="lead">Press the spacebar to start.</p>
-
-                    <hr class="my-4">
-
-                    <section class="container-guess">
-                        <div id="key_guessed"></div>
-                    </section>
-
-                    <hr class="my-4">
-
-                    <p class="lead">Letters already used:</p>
-
-                    <section class="container-loss">
-                        <div id="key_losed"></div>
-                    </section>
-
-                    <div class="row">
-                        <div class="col">
-                            <button id="finish" class="btn btn-danger">Exit</button>
-                            <button id="again" class="btn btn-success" hidden>Play Again</button>
-                        </div>
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="alert alert-success win" id="win" role="alert"></div>
-                                </div>
-                                <div class="col">
-                                    <div class="alert alert-danger lose" role="alert" id="lose"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </div>
-
-        </div>
-    </div> -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
